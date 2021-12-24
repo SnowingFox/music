@@ -1,0 +1,32 @@
+$base-red-color: rgb(254, 58, 59);
+
+$tab-title-color: rgb(138, 138, 138);
+
+$song-name-color: #9e9e9e;
+
+$playlist-creator-name-color: rgba(255, 255, 255, 0.7);
+$playlist-creator-description-color: rgba(255, 255, 255, 0.5);
+$playlist-song-index-color: #989898;
+
+$playlist-description-tags-backgroundColor: rgba(255, 255, 255, 0.15);
+$playlist-description-color: rgba(255, 255, 255, 0.95);
+
+$player-overlay-linear-color: linear-gradient(
+  rgba(0, 0, 0, 0.7),
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.7)
+);
+
+$player-music-author-color: rgba(255,255,255,0.4);
+$player-music-time-color: rgba(255,255,255,0.3);
+$player-music-lyric-color: rgba(255,255,255,.4);

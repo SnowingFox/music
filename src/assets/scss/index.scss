@@ -1,0 +1,16 @@
+@import url(./reset.scss);
+@import url(./iconfont.scss);
+@import url(./transition.scss);
+
+#app {
+  width: 100%;
+  overflow: hidden;
+}
+
+.cycle {
+  border-radius: 50%;
+}
+
+.g-relative {
+  position: relative;
+}
