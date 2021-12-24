@@ -1,5 +1,7 @@
 # 网易云音乐WebApp
 
+## 🎁 已迁移至Vite
+
 ## 🌎 在线项目
 - ✨ [**在线预览**](https://snowingfox.github.io/music)
 
