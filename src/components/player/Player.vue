@@ -29,7 +29,7 @@
               <i class="iconfont icon-download" @click="download"></i>
               <i class="iconfont icon-sing"></i>
               <router-link :to="`/comment/${currentSong.id}`">
-                <i class="iconfont icon-xiaoxi" @click="goComment"></i>
+                <i class="iconfont icon-xiaoxi"></i>
               </router-link>
               <i class="iconfont icon-Moreoptionshorizon"></i>
             </div>
@@ -67,9 +67,10 @@ import ProgressBar from './progress-bar.vue'
 import useFavorite from '@/components/player/use-favorite'
 import { usePlayerProgress } from '@/components/player/use-player-progress'
 import useRenderPlayer from '@/components/player/use-renderPlayer'
-import useDownload from '@/components/player/use-download'
+import useIconPlay from '@/components/player/use-icon-click'
 import Middle from './Middle.vue'
 import useMode from '@/components/player/use-mode'
+import useIconClick from "@/components/player/use-icon-click";
 
 const { fullScreen, handlerHiddenPlayer, currentSong } = useRenderPlayer()
 const {
@@ -89,7 +90,7 @@ const { onProgressStart, onProgressMove, onProgressEnd, onTeleportBar } =
   usePlayerProgress(setCurrentTime)
 
 const { toggleFavorite, favoriteIcon } = useFavorite()
-const { download } = useDownload(audioRef)
+const { download } = useIconClick(audioRef)
 const { playMode, modeTipsText, toggleMode, modeTipsStyle } = useMode()
 </script>
 <style lang="scss" scoped>
