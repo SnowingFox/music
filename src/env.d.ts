@@ -2,31 +2,10 @@
 
 declare module '*.vue' {
   import { DefineComponent } from 'vue'
+  import { Options } from 'better-scroll'
   // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/ban-types
   const component: DefineComponent<{}, {}, any>
   export default component
-}
-declare module 'lyric-parser' {
-  class Lyric {
-    constructor(lrc: string, handler: (params: { lineNum: number; txt: string }) => void)
-
-    lrc: string
-    tags: { album: string; artist: string; by: string; offset: string; title: string }
-    lines: Array<{ time: number; txt: string }>
-    handler: (params: { lineNum: number; txt: string }) => void
-    state: number
-    curLine: number
-
-    play(startTime: number, skipLast?: boolean): void
-
-    togglePlay(): void
-
-    stop(): void
-
-    seek(offset: number): void
-  }
-
-  export = Lyric
 }
 
 declare interface PointerEvent extends MouseEvent {

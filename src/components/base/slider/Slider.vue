@@ -16,17 +16,10 @@ import { ref } from 'vue'
 import useSlider from './useSlider'
 
 interface Props {
-  options?: Object
-  style?: Object
+  options: Object
 }
 
-const props = withDefaults(defineProps<Props>(), {
-  options: () => {
-    return {
-      slide: true
-    }
-  }
-})
+const props = defineProps<Props>()
 
 const scrollRef = ref<any>(null)
 

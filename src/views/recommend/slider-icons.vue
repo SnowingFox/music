@@ -1,13 +1,14 @@
 <template>
   <div class='slider-banner'>
-    <Slider
+    <slider
       v-if='icons.length'
       class='slider'
+      :options='options'
     >
       <div
         class='scroll-item'
         v-for='item in icons'
-        :key='item.code'
+        :key='item'
       >
         <div class='icon-container mdui-ripple border-cycle mdui-color-red cycle'>
           <i
@@ -17,17 +18,20 @@
         </div>
         <p class='icons-title'>{{ item.name }}</p>
       </div>
-    </Slider>
+    </slider>
   </div>
 </template>
 
 <script setup lang='ts'>
 import { ref } from 'vue'
 import { HOME_SLIDER_ICONS, Icons } from '@/assets/ts/constant/home'
-import Slider from '@/components/base/slider/Slider.vue'
+import { Options } from 'better-scroll'
+import slider from '@/components/base/slider/Slider.vue'
 
 const icons = ref<Icons[]>(HOME_SLIDER_ICONS)
+const options = ref<Options>({
 
+})
 </script>
 
 <style lang='scss' scoped>

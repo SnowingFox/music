@@ -21,11 +21,11 @@ import { ref } from 'vue'
 import { getRecommend } from '@/service/home'
 import { ellipsis } from '@/assets/ts/utils'
 import Slider from '@/components/base/slider/Slider.vue'
-import SliderName, { Options } from '../../components/base/slider-head.vue'
+import SliderName from '../../components/base/slider-head.vue'
+import { Options } from 'better-scroll'
 
 const recommendList = ref<any>(null)
-const options = ref<Object>({
-  slide: false,
+const options = ref<Options>({
   scrollX: true,
 })
 const headOptions = ref<Options>({

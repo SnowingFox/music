@@ -2,7 +2,7 @@
   <div class="banner" v-loading="!banners.length">
     <slider class="slider mdui-ripple" v-if="banners && banners?.length" :options="sliderOptions">
       <div class="banner-item" v-for="item in banners" :key="item">
-        <a :href="item.url">
+        <a :href="item?.url">
           <img :src="item" />
         </a>
       </div>
