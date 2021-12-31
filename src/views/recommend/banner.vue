@@ -3,7 +3,7 @@
     <slider class="slider mdui-ripple" v-if="banners && banners?.length" :options="sliderOptions">
       <div class="banner-item" v-for="item in banners" :key="item">
         <a :href="item?.url">
-          <img :src="item" />
+          <img :src="item.imageUrl" />
         </a>
       </div>
     </slider>
@@ -20,6 +20,7 @@ const sliderOptions = ref<Options>({
   slide: true,
   momentum: true,
 })
+
 const banners = ref({})
 getBanner().then((res) => {
   banners.value = res

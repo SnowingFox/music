@@ -51,12 +51,7 @@
         </div>
       </div>
     </transition>
-    <audio
-      ref="audioRef"
-      @canplay="canplay"
-      @error="error"
-      @timeupdate="dispatchCurrentTime"
-    ></audio>
+    <audio ref="audioRef" @canplay="canplay" @error="error" @timeupdate="dispatchCurrentTime"></audio>
   </div>
 </template>
 
@@ -70,7 +65,7 @@ import useRenderPlayer from '@/components/player/use-renderPlayer'
 import useIconPlay from '@/components/player/use-icon-click'
 import Middle from './Middle.vue'
 import useMode from '@/components/player/use-mode'
-import useIconClick from "@/components/player/use-icon-click";
+import useIconClick from '@/components/player/use-icon-click'
 
 const { fullScreen, handlerHiddenPlayer, currentSong } = useRenderPlayer()
 const {
@@ -86,8 +81,7 @@ const {
   dispatchCurrentTime,
   setCurrentTime,
 } = usePlay()
-const { onProgressStart, onProgressMove, onProgressEnd, onTeleportBar } =
-  usePlayerProgress(setCurrentTime)
+const { onProgressStart, onProgressMove, onProgressEnd, onTeleportBar } = usePlayerProgress(setCurrentTime)
 
 const { toggleFavorite, favoriteIcon } = useFavorite()
 const { download } = useIconClick(audioRef)
