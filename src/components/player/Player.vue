@@ -62,10 +62,10 @@ import ProgressBar from './progress-bar.vue'
 import useFavorite from '@/components/player/use-favorite'
 import { usePlayerProgress } from '@/components/player/use-player-progress'
 import useRenderPlayer from '@/components/player/use-renderPlayer'
-import useIconPlay from '@/components/player/use-icon-click'
 import Middle from './Middle.vue'
 import useMode from '@/components/player/use-mode'
 import useIconClick from '@/components/player/use-icon-click'
+import { useMediaControls } from '@vueuse/core'
 
 const { fullScreen, handlerHiddenPlayer, currentSong } = useRenderPlayer()
 const {

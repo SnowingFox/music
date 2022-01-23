@@ -7,7 +7,7 @@ export function getBanner(): AxiosPromise {
 }
 
 export function getRecommend(): AxiosPromise {
-  const url = '/personalized/1/15/'
+  const url = '/personalized/'
 
   return dispatchRequest(
     url,
@@ -19,26 +19,3 @@ export function getRecommend(): AxiosPromise {
     'result'
   )
 }
-// export function getNewSong(): AxiosPromise {
-//   const url = 'top/song'
-//
-//   addResponseInterceptor('data')
-//
-//   instance.interceptors.response.use((res) => {
-//     const songs: any[] = [[], []]
-//     const arr: any[] = [[], []]
-//     if (Array.isArray(res)) {
-//       ;(res as Array<any>) = res.slice(0, 6)
-//       songs[0] = res.slice(0, 3)
-//       songs[1] = res.slice(3, 6)
-//       for (let index in songs) {
-//         for (let song of songs[index]) {
-//           arr[index].push(createSong(song))
-//         }
-//       }
-//     }
-//     return arr
-//   })
-//
-//   return dispatchRequest(url)
-// }

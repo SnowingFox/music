@@ -1,5 +1,5 @@
 const service = {
-  baseURL: 'https://www.snowingfox.club/',
+  baseURL: 'https://autumnfish.cn/',
 }
 
 export default service

@@ -58,6 +58,11 @@ import useScroll from '@/views/music-list/use-scroll'
 import { Options } from 'better-scroll'
 import Scroll from '@/components/base/scroll/Scroll.vue'
 import { SelectPlayPayload } from '@/store/actions'
+import axios from 'axios'
+
+axios.get('https://autumnfish.cn/playlist/track/all?id=6990881882&limit=10&offset=10').then((res) => {
+  console.log(res)
+})
 
 const { songs, playlist, creator, resolvedIcons } = useRouterHook()
 const { onScroll, bgImageStyle } = useScroll(playlist)

@@ -1,5 +1,4 @@
 import { instance } from '@/service/base/base'
-import { throwIfNoData } from '@/service/base/common'
 
 export function addResponseInterceptor<T = any>(property: string[] | string): void {
   instance.interceptors.response.use((res) => {
