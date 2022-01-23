@@ -11,7 +11,6 @@ export default defineConfig({
   server: {
     port: 3001,
   },
-  base: '/music/',
   resolve: {
     alias: {
       '@': resolve('src'),
