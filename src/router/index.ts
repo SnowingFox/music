@@ -51,7 +51,7 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/music/'),
+  history: createWebHistory(),
   routes,
 })
 
