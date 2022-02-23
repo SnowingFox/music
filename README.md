@@ -3,7 +3,7 @@
 ## 🎁 已迁移至Vite
 
 ## 🌎 在线项目
-- ✨ [**在线预览**](https://snowingfox.github.io/music)
+- ✨ [**在线预览**](https://music-sepia.vercel.app/)
 
 ## 🎅项目描述
 - 🤖 使用`TypeScript` `Vue3` `NeteaseCloudMusicApi`
