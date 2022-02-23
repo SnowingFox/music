@@ -13,5 +13,6 @@
 我就按照基本他的基本思想复现了一个 `lyric-resolver`
 - ✨ [**查看插件源码**](https://www.github.com/snowingfox/lyricparser)
 - 🎁 `NeteaseCloudMusicApi`没有获取歌单所有歌曲的接口，我就提了一个PR把它实现了
+- [Codesandbox](https://codesandbox.io/s/blissful-spence-bdnbsj)
 
 ### 🎁❤🎄 如果觉得还不错，点个star收藏一下吧
