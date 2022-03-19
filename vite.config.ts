@@ -20,7 +20,6 @@ export default defineConfig({
     },
   },
   server: {
-    https: true,
-    open: '/home',
+    port: 3001,
   },
 })
