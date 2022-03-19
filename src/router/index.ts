@@ -1,8 +1,13 @@
 import type { RouteRecordRaw } from 'vue-router'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-const routes: Array<RouteRecordRaw> = [
+const Recommend = import('@/views/Recommend/Recommend.vue')
 
+const routes: RouteRecordRaw[] = [
+  {
+    path: '/recommend',
+    component: Recommend,
+  },
 ]
 
 const router = createRouter({
