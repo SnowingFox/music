@@ -21,6 +21,6 @@ export default defineConfig({
   },
   server: {
     https: true,
-    open: '/src/index.html',
+    open: '/home',
   },
 })
