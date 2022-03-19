@@ -3,15 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --mode=developmen",
+    "dev": "vite --mode=development",
     "build": "vite build --mode=production",
     "preview": "vite preview"
   },
   "dependencies": {
     "@quasar/extras": "^1.13.3",
     "@types/node": "^17.0.21",
+    "@vueuse/core": "^8.1.2",
+    "axios": "^0.26.1",
     "pinia": "^2.0.12",
     "quasar": "^2.6.1",
+    "rxjs": "^7.5.5",
+    "swiper": "^8.0.7",
     "vue": "^3.2.25",
     "vue-router": "4"
   },
