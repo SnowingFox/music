@@ -1,11 +1,11 @@
 <script setup lang="ts">
 
+import Header from '@/components/Header/Header.vue'
 </script>
 
 <template>
-  <q-btn color="secondary" label="Secondary" />
+  <div class="w-screen h-screen relative overflow-hidden bg-slate-100">
+    <Header />
+    <RouterView />
+  </div>
 </template>
-
-<style>
-
-</style>
