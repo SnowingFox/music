@@ -4,6 +4,7 @@ import '@quasar/extras/material-icons/material-icons.css'
 import 'quasar/src/css/index.sass'
 import { createPinia } from 'pinia'
 import App from './App.vue'
+import './index.css'
 
 const app = createApp(App)
 
