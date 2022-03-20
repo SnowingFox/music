@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Autoplay, Pagination } from 'swiper'
 import { computed, reactive } from 'vue'
 import { getBanner } from '@/service/api/recommend'
-import 'swiper/css/pagination'
 import './style.css'
 
 const { state: banners, isLoading } = useAsyncState(getBanner, { banners: [] })
