@@ -5,6 +5,10 @@ const Recommend = import('@/views/Recommend/Recommend.vue')
 
 const routes: RouteRecordRaw[] = [
   {
+    path: '/',
+    redirect: '/recommend',
+  },
+  {
     path: '/recommend',
     component: Recommend,
   },
