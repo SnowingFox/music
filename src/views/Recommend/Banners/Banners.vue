@@ -42,4 +42,11 @@ const pagination = computed(() => ({
       </swiper>
     </div>
   </template>
+  <template v-else>
+    <div class="q-pa-md w-full p-0">
+      <q-card flat>
+        <q-skeleton height="150px" class="w-full bg-gray-200 rounded-3xl" square />
+      </q-card>
+    </div>
+  </template>
 </template>
