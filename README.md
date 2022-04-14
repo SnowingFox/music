@@ -7,6 +7,8 @@
 ## 2022/3/19
 ### 重构在[dev](https://github.com/SnowingFox/music/tree/dev)分支
 
+## 2022/4/14
+### 有点不想做了，还是就这样吧，改来改去都差不多
 ### 以下为原文
 
 ## 🎁 已迁移至Vite
