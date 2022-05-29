@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import HomeVideo from '@/views/home-video/home-video.vue'
 import HomeVillage from '@/views/home-village/home-village.vue'
 import Mine from '@/views/mine/Mine.vue'
@@ -51,7 +51,7 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 })
 
